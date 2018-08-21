@@ -27,7 +27,7 @@
 		var scene = new BABYLON.Scene(engine);
 
 		// Reguläre Kamera mit festem Blickpunkt
-        var camera = new BABYLON.ArcRotateCamera("ArcRotateCamera", -Math.PI/4.0, 0.25*Math.PI, 4.0, new BABYLON.Vector3(0, 0, 0), scene);
+        var camera = new BABYLON.ArcRotateCamera("ArcRotateCamera", -Math.PI/4.0, 0.25*Math.PI, 1.5, new BABYLON.Vector3(0, 0, 0), scene);
 
 		//Bonusteil:3
 		var skybox = BABYLON.MeshBuilder.CreateBox("skyBox", {size:1000.0}, scene);
@@ -44,7 +44,7 @@
 		//var camera = new BABYLON.DeviceOrientationCamera("ArcRotateCamera", new BABYLON.Vector3(1, 1, 1), scene);
 		//camera.setCameraRigMode(20,{interaxialDistance: 0.0637});
 		
-		var sun = BABYLON.Mesh.CreateSphere("Sun", 10.0, 0.05, scene);
+		var sun = BABYLON.Mesh.CreateSphere("Sun", 10.0, 0.65, scene);
 		var earth = BABYLON.Mesh.CreateSphere("Earth", 30.0, 0.3, scene);	
 		var moon = BABYLON.Mesh.CreateSphere("Moon", 20.0, 0.075, scene);
 		
